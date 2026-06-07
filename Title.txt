@@ -1,0 +1,170 @@
+                              Title
+...College Information Chatbot Using Python……
+
+
+
+*  Objective
+The main objective of this project is to develop a chatbot that provides information about a college such as courses, admission process, facilities, placements, contact details, and other student-related queries.
+
+
+* Introduction
+This project is a rule-based chatbot developed using Python. It interacts with users and provides predefined responses to college-related questions.
+
+
+*  Software Requirements
+* Python 3.x 
+* VS Code / IDLE 
+* Windows Operating System
+
+
+*  Features
+* College Information 
+* Course Details 
+* Admission Process 
+* Placement Information 
+* Faculty Information 
+* Hostel Information 
+* Library Information 
+* Scholarship Information 
+* Contact Details 
+* Exit Option
+
+
+
+
+
+
+*  Algorithm
+Step 1: Start the program.
+
+Step 2: Display "Welcome to College Information Chatbot".
+
+Step 3: Initialize a counter variable count = 0.
+
+Step 4: Start an infinite loop using while True.
+
+Step 5: Increment the counter by 1.
+
+Step 6: Accept user input and convert it to lowercase.
+
+Step 7: Compare the user input with predefined keywords.
+
+Step 8: If the input matches a valid query, display the corresponding college information.
+
+Step 9: If the input matches an exit command (bye, exit, quit, etc.), display a thank you message and terminate the loop.
+
+Step 10: If the input does not match any predefined query, display "Sorry, I don't understand."
+
+Step 11: Repeat Steps 5 to 10 until the user exits.
+
+Step 12: Display the total number of questions asked.
+Step 13: End the program.
+*  Flowchart
+
+
+
+
+
+* Source Code
+
+print("Welcome to College Information Chatbot")
+
+count = 0
+
+while True:
+
+    count += 1
+    
+    user = input("You: ").lower()
+
+    if user in ["hello","hi","hey"]:
+        print("Bot: Hello Student!")
+
+    elif user in [ "tell me about the college","college name","college","about college","college information","information about college","college details","details about college","college info"]:
+        print("BOt: college name is zeal education society .\nIt is located in Pune, Maharashtra, India. It was established in 2005 and offers undergraduate and postgraduate courses in various fields of engineering, management, and computer applications. The college has a strong focus on research and innovation, with state-of-the-art facilities and experienced faculty members.")  
+
+    elif user in ["courses","course","courses offered","offered courses"]:
+        print("Bot: We offer courses in Computer Science, Information Technology, and Electronics, Mechanical Engineering, Civil Engineering, and Business Administration,Artificial Intelligence and Machine Learning And many more.")      
+
+    elif user in ["admission process","admission","how to apply","application process"]:
+        print("Bot: To apply for admission, you can visit our official website and fill out the online application form. You will need to provide your academic transcripts, entrance exam scores (if applicable), and other relevant documents. The admission process may also include an interview or entrance exam, depending on the course you are applying for.")
+
+    elif user in ["contact information","contact","contact details","how to contact","contact us"]:
+        print("Bot: You can contact us at:\nEmail: zealcollege@91.gmail.com\nPhone: +91 2344678909")
+
+    elif user in ["location","address","where are you located","where is the college","location of college","address of college","college location","college address"]:
+        print("Bot: We are located at:\n123 College Street, Pune, Maharashtra, India.")   
+
+    elif user in ["facilities","facility","what facilities do you have","college facilities"]:
+        print("Bot: We have state-of-the-art facilities including well-equipped laboratories, a modern library, sports facilities, and comfortable hostels for students.")  
+
+    elif user in ["events","event","upcoming events","college events"]:
+        print("Bot: We have various events throughout the year, including cultural festivals, technical workshops, and sports competitions. Please check our official website for the latest updates on upcoming events.")
+
+    elif user in ["timings","timing","college timings","working hours"]:
+        print("Bot: Our college timings are from 9:00 AM to 5:00 PM, Monday to Friday. However, specific timings may vary for different departments and courses.")  
+
+    elif user in ["campus","campus information","campus details","campus facilities",]:
+        print("Bot: Our campus is spread over a large area with green spaces and modern infrastructure. We have well-maintained classrooms, laboratories, a library, sports facilities, and comfortable hostels for students. The campus also includes a cafeteria that serves a variety of food options for students and staff.")
+
+    elif user in ["faculty","faculty information","faculty details","faculty members"]:
+        print("Bot: Our college has a highly qualified and experienced faculty team. They are dedicated to providing quality education and fostering a supportive learning environment for our students. The faculty members are experts in their respective fields and are actively involved in research and industry collaborations.")
+
+    elif user in ["hostel","hostel information","hostel details","hostel facilities"]:
+        print("Bot: We provide comfortable hostel facilities for our students. The hostels are equipped with modern amenities, including 24/7 security, Wi-Fi connectivity, and recreational areas. We have separate hostels for.")        
+
+    elif user in ["sports","sports facilities","sports information","sports details"]:
+        print("Bot: We have excellent sports facilities, including a football field, basketball court, cricket ground, and indoor sports facilities for badminton and table tennis. We encourage our students to participate in sports activities and have a dedicated sports department that organizes various tournaments and events throughout the year.")
+
+    elif user in ["library","library information","library details","library facilities"]:
+        print("Bot: Our college library is well-stocked with a wide range of books, journals, and digital resources. It provides a quiet and conducive environment for studying and research. The library also offers access to online databases and e-books to support the academic needs of our students and faculty members.")  
+
+    elif user in ["placement","placement information","placement details","placement process","placement cell","placement department","placement facilities","placement support","placement assistance",    "placement services","placement opportunities"]:
+        print("Bot: Our college has a dedicated placement cell that works tirelessly to provide placement opportunities for our students. We have strong industry connections and regularly organize campus recruitment drives, internships, and workshops to enhance the employability of our students. Our placement cell also provides career counseling and guidance to help students make informed career choices.")
+
+    elif user in ["principal","principal information","principal details","principal name","principal of college","college principal"]:
+        print("Bot: The principal of our college is Dr. Ajit M. Kate. He has been leading the institution with dedication and vision, ensuring that we provide quality education and a supportive environment for our students and faculty members.")
+
+    elif user in ["intake","admission intake","intake capacity","number of students admitted"]:
+        print("Bot: The intake capacity for our college varies depending on the course and department. Generally, we admit a significant number of students each year across various undergraduate and postgraduate programs. For specific intake details, please refer to our official website or contact our admissions office.")
+
+    elif user in ["laboratories","laboratory information","laboratory details","laboratory facilities"]:
+        print("Bot: Our college has state-of-the-art laboratories equipped with the latest technology and equipment. These laboratories are designed to provide hands-on learning experiences for our students in various fields of engineering, computer science, and other disciplines. Our faculty members and lab technicians are always available to assist students in their practical work and research projects.")
+
+    elif user in ["classrooms","classroom information","classroom details","classroom facilities"]:
+        print("Bot: Our classrooms are modern and well-equipped with audio-visual aids to enhance the learning experience for our students. We have smart classrooms with projectors, interactive whiteboards, and comfortable seating arrangements to create a conducive environment for learning and collaboration.")
+
+    elif user in ["which companies visit for placements","top recruiters","recruiting companies","companies that visit for placements","top placement companies",   "recruiters","companies that recruit from our college", "top recruiters from our college"]:
+        print("Bot: We have a strong network of industry connections, and several top companies visit our campus for placements. Some of the prominent recruiters include TCS, Infosys, Wipro, Accenture, IBM, Microsoft, Google, and many more. We also have collaborations with various startups and mid-sized companies that offer exciting opportunities for our students.")
+
+    elif user in ["scholarships","scholarship information","scholarship details","available scholarships"]:
+        print("Bot: We offer a range of scholarships to support our students financially. These scholarships are based on academic performance, extracurricular achievements, and financial need. We encourage students to apply for these scholarships through our official website or contact our scholarship office for more information.")  
+
+    elif user in ["fees","fee structure","tuition fees","college fees","fee details"]:
+        print("Bot: The fee structure for our college varies depending on the course and program. Generally, we offer competitive tuition fees for our undergraduate and postgraduate programs. For specific fee details, please refer to our official website or contact our admissions office for the most up-to-date information.")  
+
+    elif user in ["give me a collage website","college website","official website","website"]:
+        print("Bot: https://zealpolytechnic.com/.")        
+    
+    elif user in ["exit","by","bye","quit","bye","goodbye","see you later","thank you","thanks","thank you bot","thank you chatbot","interaction complete","ok bye"]:
+        print("Bot: Thank You!")
+        break
+    else:
+        print("Bot: Sorry, I don't understand.")
+
+           
+
+print(f"Total questions asked: {count}")
+
+* Sample Output
+
+Welcome to College Information Chatbot
+You: hello
+Bot: Hello Student!
+You: tell me about the college
+Bot: college name is zeal education society .
+It is located in Pune, Maharashtra, India. It was established in 2005 and offers undergraduate and postgraduate courses in various fields of engineering, management, and computer applications. The college has a strong focus on research and innovation, with state-of-the-art facilities and experienced faculty members.
+You: by
+Bot: Thank You!
+Total questions asked: 3
+
